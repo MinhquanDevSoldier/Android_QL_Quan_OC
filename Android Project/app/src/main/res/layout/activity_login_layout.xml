@@ -14,6 +14,9 @@
         android:paddingTop="60dp"
         android:paddingBottom="20dp"
         />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:background="#e0e0e0"
         android:layout_width="380dp"
@@ -22,7 +25,7 @@
         android:gravity="center"
         android:layout_marginLeft="15dp"
         android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="110dp"
         >
 
         <ImageView
@@ -30,6 +33,7 @@
             android:layout_height="200dp"
             android:src="@drawable/pngwing" />
         <EditText
+            android:id="@+id/EditText_TenTK"
             android:layout_marginTop="30dp"
             android:layout_width="350dp"
             android:background="@drawable/edt_dang_nhap"
@@ -39,6 +43,7 @@
             android:textSize="25sp"
             android:drawableLeft="@drawable/icon_account" />
         <EditText
+            android:id="@+id/EditText_MatKhau"
             android:drawableLeft="@drawable/icon_password"
             android:background="@drawable/edt_dang_nhap"
             android:layout_marginTop="15dp"
@@ -48,7 +53,18 @@
             android:textSize="25sp"
             android:layout_gravity="center"
             />
+        <Switch
+            android:layout_marginTop="10dp"
+            android:id="@+id/Switch_Hienthi_MatKhau"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:text="Hiện mật khẩu"
+            android:textSize="25sp"
+            android:layout_marginRight="20dp"
+            android:shadowColor="@color/black"
+            android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/button_DangNhap"
             android:layout_marginTop="15dp"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
@@ -61,4 +77,5 @@
             android:textStyle="bold"
             />
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

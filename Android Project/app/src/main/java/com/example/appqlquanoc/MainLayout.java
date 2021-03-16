@@ -7,23 +7,40 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainLayout extends AppCompatActivity {
-    ImageButton imorder;
+    ImageButton imb_order,imb_monan,imb_nhanvien,imb_hoadon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_layout);
         Anhxa();
-        imorder.setOnClickListener(new View.OnClickListener() {
+        //kt_QuyenSD();
+
+        imb_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent orderpage = new Intent(getApplication(),OrderLayout.class);
-                startActivity(orderpage);
+                Intent orderintent = new Intent(getApplication(),TableLayout.class);
+                startActivity(orderintent);
             }
         });
     }
-    void Anhxa()
+
+//    private void kt_QuyenSD() {
+////        Intent intent = getIntent();
+////        String loaitk =  intent.getStringExtra("loaitk");
+////        if(loaitk.equals("0"))
+////        {
+////            imb_nhanvien.setEnabled(false);
+////            imb_hoadon.setEnabled(false);
+////            imb_monan.setEnabled(false);
+////        }
+//    }
+//
+    public void Anhxa()
     {
-        imorder = (ImageButton) findViewById(R.id.iborder);
+        imb_order = (ImageButton) findViewById(R.id.imageButton_Order);
+        imb_monan = findViewById(R.id.imageButton_MonAn);
+        imb_hoadon = findViewById(R.id.imageButton_HoaDon);
+        imb_nhanvien = findViewById(R.id.imageButton_Staff);
     }
 
 }

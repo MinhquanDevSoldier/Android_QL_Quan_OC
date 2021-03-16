@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btn_table"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:textStyle="bold"
+        android:text="asd"
+        android:background="#ffffd2"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</FrameLayout>

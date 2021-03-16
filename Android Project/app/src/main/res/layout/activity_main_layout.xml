@@ -28,7 +28,7 @@
         android:orientation="vertical"
         >
         <ImageButton
-            android:id="@+id/iborder"
+            android:id="@+id/imageButton_Order"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@drawable/buttontable"
@@ -49,6 +49,7 @@
                 android:orientation="vertical"
                 >
                 <ImageButton
+                    android:id="@+id/imageButton_MonAn"
                     android:background="@drawable/buttontable"
                     android:layout_width="150dp"
                     android:layout_height="185dp"
@@ -67,6 +68,7 @@
                     android:background="@color/black"
                     />
                 <ImageButton
+                    android:id="@+id/imageButton_HoaDon"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/buttontable"
                     android:layout_width="150dp"
@@ -91,6 +93,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <ImageButton
+                    android:id="@+id/imageButton_Staff"
                     android:background="@drawable/buttontable"
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
@@ -111,9 +114,6 @@
                     android:background="@color/black"
                     />
             </LinearLayout>
-
-
-
         </LinearLayout>
     </LinearLayout>
 
